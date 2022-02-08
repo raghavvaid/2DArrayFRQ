@@ -55,7 +55,7 @@ public class NitalTester {
             if (!hasAllValues(square[0],square[i])) return false;
         }
         for (int i = 0; i < square[0].length; i++){
-            if (!hasAllValues(square[0],square[i])) return false;
+            if (!hasAllValues(square[0],square(getColumn(i)))) return false;
         }
 
         return true;
